@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:bitriel/screens/confirm_pin.dart';
+import 'package:bitriel/screens/home_screen.dart';
 import 'package:bitriel/screens/verify_Mnemonic.dart';
 
 import 'package:flutter/material.dart';
@@ -78,8 +79,9 @@ class _CreateMnemonicState extends State<ImportMnemonic> {
                   child: Padding(
                     padding: const EdgeInsets.all(16),
                     child: TextFormField(
-                      decoration:
-                          InputDecoration(label: Text('Add your 12 keywords')),
+                      decoration: InputDecoration(
+                        hintText: 'Add your 12 keywords',
+                      ),
                     ), //
                   )),
               SizedBox(
@@ -101,7 +103,7 @@ class _CreateMnemonicState extends State<ImportMnemonic> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => VerifyMnemonic(),
+                      builder: (context) => HomeScreen(),
                     ),
                   );
                 },

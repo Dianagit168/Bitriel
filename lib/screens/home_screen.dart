@@ -1,0 +1,25 @@
+import 'package:bitriel/widgets/body/home.dart';
+import 'package:flutter/material.dart';
+
+import '../widgets/app_bar/home_screen.dart';
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: const [
+            AppBarHome(),
+            SizedBox(
+              height: 30,
+            ),
+            BodyHome(),
+          ],
+        ),
+      ),
+    );
+  }
+}

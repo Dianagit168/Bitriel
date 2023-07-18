@@ -215,7 +215,6 @@ class _CreateMnemonicState extends State<VerifyMnemonic> {
                                       });
                                     },
                                   ),
-                                  
                                   title: Text(
                                     strutStyle: StrutStyle(height: 1.5),
                                     'I understand that if I lose my Secret Mnemonic I will not be able to access my wallet',
@@ -230,13 +229,23 @@ class _CreateMnemonicState extends State<VerifyMnemonic> {
                                           builder: (context) => VerifyAgain(),
                                         ));
                                   },
-                                  child: Text(
-                                    'Yes, Verify Later',
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 207, 210, 216),
-                                      fontSize: 19,
-                                    ),
-                                  ),
+                                  child: isValue!
+                                      ? Text(
+                                          'Yes, Verify Later',
+                                          style: TextStyle(
+                                            color: Color.fromARGB(
+                                                255, 242, 124, 60),
+                                            fontSize: 19,
+                                          ),
+                                        )
+                                      : Text(
+                                          'Yes, Verify Later',
+                                          style: TextStyle(
+                                            color: Color.fromARGB(
+                                                255, 207, 210, 216),
+                                            fontSize: 19,
+                                          ),
+                                        ),
                                 ),
                                 ElevatedButton(
                                   style: ElevatedButton.styleFrom(
