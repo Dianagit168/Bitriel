@@ -16,6 +16,7 @@ class BodyD extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(24.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Image.asset('assets/images/bitcoin-441959.png'),
             const Text(
@@ -43,11 +44,17 @@ class BodyD extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 300,
+            Image.asset(
+              'assets/images/Group 157(1).png',
+              width: 350,
+              height: 225,
+              fit: BoxFit.cover,
             ),
-            Container(
-              height: 200,
+            const SizedBox(
+              height: 30,
+            ),
+            SizedBox(
+              height: 170,
               width: double.infinity,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -71,37 +78,43 @@ class BodyD extends StatelessWidget {
                 ],
               ),
             ),
-            Row(
-              children: [
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: const Size(200, 50),
-                    primary: const Color.fromARGB(255, 89, 188, 124),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 24,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: const Size(150, 46),
+                      primary: const Color.fromARGB(255, 89, 188, 124),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50),
+                      ),
                     ),
-                  ),
-                  child: const Text(
-                    'Buy',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                  onPressed: () {},
-                ),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: const Size(200, 50),
-                    primary: const Color.fromARGB(255, 255, 114, 114),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50),
+                    child: const Text(
+                      'Buy',
+                      style: TextStyle(fontSize: 17),
                     ),
+                    onPressed: () {},
                   ),
-                  child: const Text(
-                    'Sell',
-                    style: TextStyle(fontSize: 20),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: const Size(150, 46),
+                      primary: const Color.fromARGB(255, 255, 114, 114),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                    ),
+                    child: const Text(
+                      'Sell',
+                      style: TextStyle(fontSize: 17),
+                    ),
+                    onPressed: () {},
                   ),
-                  onPressed: () {},
-                ),
-              ],
+                ],
+              ),
             )
           ],
         ),

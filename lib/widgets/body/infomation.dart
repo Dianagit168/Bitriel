@@ -13,9 +13,17 @@ class InfoCoin extends StatelessWidget {
       children: [
         Text(
           tit!,
-          style: const TextStyle(color: Color.fromARGB(255, 148, 147, 147)),
+          style: const TextStyle(
+            color: Color.fromARGB(255, 148, 147, 147),
+            fontWeight: FontWeight.bold,
+          ),
         ),
-        Text(val!),
+        Text(
+          val!,
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ],
     );
   }
