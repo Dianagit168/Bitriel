@@ -3,11 +3,10 @@ import 'package:bitriel/widgets/body/top-coins.dart';
 import 'package:bitriel/widgets/body/type_bitriel.dart';
 import 'package:flutter/material.dart';
 
-import '../../data/data_coin.dart';
-
 class BodyHome extends StatelessWidget {
-  const BodyHome({Key? key, this.datacoinsl}) : super(key: key);
-  final DataCosins? datacoinsl;
+  const BodyHome({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -111,16 +110,7 @@ class BodyHome extends StatelessWidget {
             ),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: ListView.builder(
-            shrinkWrap: true,
-            itemBuilder: (context, index) {
-              return const TopCoins();
-            },
-            itemCount: 3,
-          ),
-        ),
+        const TopCoins()
       ],
     );
   }

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
+import '../../data/data_coin.dart';
 import '../../screens/home_screen.dart';
 
 class AppBarD extends StatelessWidget {
-  const AppBarD({Key? key}) : super(key: key);
+  const AppBarD({Key? key, required this.aboutCoins}) : super(key: key);
+  final List<DataCoins?> aboutCoins;
 
   @override
   Widget build(BuildContext context) {
