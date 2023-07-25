@@ -27,6 +27,20 @@ class DataCosins {
       subTit: 'BTC',
       values: '37089.9',
       percent: '2.5',
+    ),
+    DataCosins(
+      img: 'assets/images/bitcoin-441959.png',
+      tit: 'Bitcoin',
+      subTit: 'BTC',
+      values: '37089.9',
+      percent: '2.5',
+    ),
+    DataCosins(
+      img: 'assets/images/bitcoin-441959.png',
+      tit: 'Bitcoin',
+      subTit: 'BTC',
+      values: '37089.9',
+      percent: '2.5',
     )
   ];
 }
