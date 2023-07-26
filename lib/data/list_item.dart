@@ -8,7 +8,7 @@ class Item {
   Item({required this.image, required this.title, required this.clr});
 }
 
-final ListItem = [
+final allCard = [
   Item(
     image: "assets/images/Exchange.png",
     title: "Swap",

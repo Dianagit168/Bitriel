@@ -78,9 +78,10 @@ class _CreateMnemonicState extends State<ImportMnemonic> {
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(16),
-                    child: TextFormField(
+                    child: TextField(
                       decoration: InputDecoration(
                         hintText: 'Add your 12 keywords',
+                        border: InputBorder.none,
                       ),
                     ), //
                   )),

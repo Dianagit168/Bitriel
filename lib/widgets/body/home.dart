@@ -1,3 +1,4 @@
+import 'package:bitriel/screens/swap.dart';
 import 'package:bitriel/widgets/body/card_widget.dart';
 import 'package:bitriel/widgets/body/top-coins.dart';
 import 'package:bitriel/widgets/body/type_bitriel.dart';
@@ -36,23 +37,31 @@ class BodyHome extends StatelessWidget {
                   crossAxisSpacing: 10, //គម្គម្លាតឆ្វេងស្តាំ
                   mainAxisSpacing: 2, //គម្លាតលើក្រោម
                 ),
-                children: const [
-                  CardWidget(
-                    tit: 'Swap',
-                    img: 'assets/images/Exchange.png',
-                    clr: Color.fromARGB(255, 203, 229, 235),
+                children: [
+                  InkWell(
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Swap(),
+                      ),
+                    ),
+                    child: const CardWidget(
+                      tit: 'Swap',
+                      img: 'assets/images/Exchange.png',
+                      clr: Color.fromARGB(255, 203, 229, 235),
+                    ),
                   ),
-                  CardWidget(
+                  const CardWidget(
                     tit: 'Staking',
                     img: 'assets/images/Cryptocurrency.png',
                     clr: Color.fromARGB(255, 249, 242, 230),
                   ),
-                  CardWidget(
+                  const CardWidget(
                     tit: 'Buy',
                     img: 'assets/images/Wallet.png',
                     clr: Color.fromARGB(255, 235, 213, 223),
                   ),
-                  CardWidget(
+                  const CardWidget(
                     tit: 'Bitriel NFTs',
                     img: 'assets/images/Nft.png',
                     clr: Color.fromARGB(255, 207, 193, 229),
