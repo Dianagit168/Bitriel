@@ -12,12 +12,6 @@ class Hello extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            CustomAppBar(
-              tit: 'កូនប៉ាៗ',
-              onNavigate: () {
-                Navigator.pop(context);
-              },
-            ),
             Container(
               height: 100,
               width: 100,

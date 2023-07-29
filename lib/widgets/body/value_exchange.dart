@@ -67,14 +67,17 @@ class _ValueExchangeState extends State<ValueExchange> {
                         ),
                         color: Color.fromARGB(255, 250, 250, 250),
                       ),
-                      child: const TextField(
-                        cursorColor: Colors.black,
-                        style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.center,
-                        keyboardType: TextInputType.none,
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
+                      child: const Padding(
+                        padding: EdgeInsets.only(left: 24),
+                        child: TextField(
+                          cursorColor: Colors.black,
+                          style: TextStyle(
+                              fontSize: 25, fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.start,
+                          keyboardType: TextInputType.none,
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                          ),
                         ),
                       ), //
                     ),
@@ -182,14 +185,17 @@ class _ValueExchangeState extends State<ValueExchange> {
                         ),
                         color: Color.fromARGB(255, 250, 250, 250),
                       ),
-                      child: const TextField(
-                        cursorColor: Colors.black,
-                        style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.center,
-                        keyboardType: TextInputType.none,
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
+                      child: const Padding(
+                        padding: EdgeInsets.only(left: 24),
+                        child: TextField(
+                          cursorColor: Colors.black,
+                          style: TextStyle(
+                              fontSize: 25, fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.start,
+                          keyboardType: TextInputType.none,
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                          ),
                         ),
                       ), //
                     ),

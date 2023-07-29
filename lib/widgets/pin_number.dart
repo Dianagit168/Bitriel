@@ -35,7 +35,7 @@ class PinNumber extends StatelessWidget {
             style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 27,
-              color: Color.fromARGB(158, 0, 11, 210),
+              color: Color.fromARGB(255, 13, 31, 60),
             ),
           ),
         ),
@@ -53,7 +53,7 @@ class PinNumber extends StatelessWidget {
             style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 27,
-              color: Color.fromARGB(158, 0, 11, 210),
+              color: Color.fromARGB(255, 13, 31, 60),
             ),
           ),
         ),
@@ -69,14 +69,14 @@ class PinNumber extends StatelessWidget {
             icon: isIcon
                 ? Icon(
                     tx3,
-                    color: const Color.fromARGB(158, 0, 11, 210),
+                    color: const Color.fromARGB(255, 13, 31, 60),
                   )
                 : Text(
                     tx3,
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 27,
-                      color: Color.fromARGB(158, 0, 11, 210),
+                      color: Color.fromARGB(255, 13, 31, 60),
                     ),
                   )),
       ],
